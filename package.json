@@ -1,0 +1,12 @@
+{
+  "name": "sistema-de-criaturas-m-gicas",
+  "version": "1.0.0",
+  "description": "ATIVIDADE AVALIATIVA – PROGRAMAÇÃO DE APLICATIVOS  PROGRAMAÇÃO ORIENTADA A OBJETOS (POO) - SISTEMA DE CRIATURAS MÁGICAS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
