@@ -34,7 +34,7 @@ descansar(){
 }
 
 setEnergia(valor){
-    this.#energia += valor
+    this.#energia += valor;
 }
 
 getEnergia(){

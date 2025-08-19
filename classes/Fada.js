@@ -20,9 +20,10 @@ class Fada extends Criatura {
     }
     descansar(){
         this.setEnergia(15);
-        return `Recupera 15 de energia por o ${this.nome} ter descansado. Energia restaurada!`
+        return `Recupera 15 de energia por o ${this.nome} ter descansado. Energia restaurada em ${this.getEnergia()}!`
     }
 }
+
 
 
 
