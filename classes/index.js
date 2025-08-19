@@ -4,3 +4,11 @@ o Crie instâncias: Fada, Dragão, Gnomo e de sua criatura personalizada.
 2. Execute:
 o Chame agir() para todas as criaturas.
 o Chame descansar() para todas as criaturas. */
+
+const Fada = require('./Fada');
+
+let fadinha = new Fada('tinkerbell')
+
+console.log(fadinha.agir());
+console.log(fadinha.agir());
+console.log(fadinha.agir());

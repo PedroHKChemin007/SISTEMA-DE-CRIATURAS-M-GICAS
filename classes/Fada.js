@@ -8,26 +8,22 @@ o Exiba "[nome] ataca com [ataqueMagico]!".
 o Reduza #energia em 15. */
 class Fada extends Criatura {
 
-    nome;
-    atmg;
-    #energia;
+    constructor(nome){
+        super(nome)
+        this.atmg = 'Bola de Luz Arco-Íris';
+    }
 
-constructor(nome, atmg, 'Bola de Luz Arco-Íris' ){
-    this.nome = nome;
-    this.atmg = atmg;
-    this.#energia = 100;
-}
-
-agir(){
-    this.#energia -= 15;
-    return `${nome} ataca com ${this.atmg}`
-}
-descansar(){
-    energia += 15;
-    return `Recupera 15 de energia por o ${nome} ter descansado. Energia restaurada!`
-}
+    agir(){
+        this.setEnergia(-15);
+        return `${this.nome} ataca com ${this.atmg}, e possui ${this.getEnergia()} de mana`
+        
+    }
+    descansar(){
+        this.setEnergia(15);
+        return `Recupera 15 de energia por o ${this.nome} ter descansado. Energia restaurada!`
+    }
 }
 
 
 
-module.exports = Criatura
+module.exports = Fada

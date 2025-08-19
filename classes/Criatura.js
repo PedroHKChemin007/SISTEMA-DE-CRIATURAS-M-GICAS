@@ -18,9 +18,9 @@ class Criatura {
     atmg;
     #energia;
 
-constructor(nome, atmg){
+constructor(nome){
     this.nome = nome;
-    this.atmg = atmg;
+    this.atmg = 'Ataque Mágico genérico';
     this.#energia = 100;
 }
 
@@ -32,6 +32,15 @@ descansar(){
     energia += 15;
     return `Recupera 15 de energia por o ${nome} ter descansado. Energia restaurada!`
 }
+
+setEnergia(valor){
+    this.#energia += valor
+}
+
+getEnergia(){
+    return this.#energia;
+}
+
 }
 
 
